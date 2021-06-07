@@ -13,8 +13,15 @@ function run(event) {
     .get('https://api.github.com/users/' + userName)
     .then(function (response) {
         console.log(response.data)
+        location.href = "user.html"
+
     })
     .catch(function (error) {
         console.log(error)
     })
+}
+
+function createContent() {
+    var userImg = document.createElement('img')
+    var avatar = document
 }
