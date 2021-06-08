@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&display=swap');
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -6,7 +8,7 @@ body {
     color: #dadce7;
     height: 100vh;
     display: grid;
-    grid-template-columns: 450px;
+    grid-template-columns: 70vh;
     grid-template-rows: auto;
     justify-content: center;
     align-content: center;
@@ -44,9 +46,41 @@ body {
     cursor: pointer;
 }
 
+#avatarSection {
+    margin:0.2rem 0 1rem 0;
+}
 main img {
     width: 120px;
     height: 120px;
     border-radius: 50%;
     border: 0.2rem solid #1df009;
+}
+
+#userInformation {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-family: 'Poppins';
+    line-height: 1.2rem;
+    color: #000;
+    margin-left: 1rem;
+}
+
+#userInformation #name {
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 0.5rem;
+}
+
+#userInformation #email {
+    font-weight: 500;
+    padding: 0 0.5rem;
+    opacity: 0.7;
+}
+
+#userInformation #location {
+    font-weight: 500;
+    padding: 0 0.5rem;
+    opacity: 0.7;
 }
