@@ -8,7 +8,7 @@ body {
     color: #dadce7;
     height: 100vh;
     display: grid;
-    grid-template-columns: 70vh;
+    grid-template-columns: 450px;
     grid-template-rows: auto;
     justify-content: center;
     align-content: center;
