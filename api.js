@@ -14,6 +14,9 @@ function run(event) {
         if (response.data.message != "Not Found") {
             localStorage.setItem("userName", response.data.login)
             localStorage.setItem("avatar", response.data.avatar_url)
+            localStorage.setItem("name", response.data.name)
+            localStorage.setItem("email", response.data.email)
+            localStorage.setItem("location", response.data.location)
             location.href = "user.html"
         }
         
@@ -23,9 +26,5 @@ function run(event) {
 
         console.log(error)
     })
-}
-
-function createContent() {
-    var userImg = document.createElement('img')
 }
 
