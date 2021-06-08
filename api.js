@@ -11,13 +11,15 @@ function run(event) {
     axios
     .get('https://api.github.com/users/' + userName)
     .then(function (response) {
-        console.log(response.data)
+        if (response.data.message != "Not Found") {
+            localStorage.setItem("avatar", response.data.avatar_url)
+            location.href = "user.html"
+        }
+        
 
-        location.href = "user.html"
-
-        localStorage.setItem("avatar", response.data.avatar_url)
     })
     .catch(function (error) {
+
         console.log(error)
     })
 }
