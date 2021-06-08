@@ -14,6 +14,11 @@ function run(event) {
     .then(function (response) {
         console.log(response.data)
         location.href = "user.html"
+        avatar = response.data.avatar_url
+        imagem = document.createElement('img')
+        imagem.src = avatar
+        content.appendChild(imagem)
+
 
     })
     .catch(function (error) {
@@ -23,5 +28,4 @@ function run(event) {
 
 function createContent() {
     var userImg = document.createElement('img')
-    var avatar = document
 }
