@@ -1,12 +1,15 @@
-var content = document.querySelector('#app main')
-var logoutButton = document.getElementById('logout')
+var logoutButton = document.getElementById('exit')
+var userName = document.getElementById('userName')
+var avatar = document.getElementById('avatarImage')
 
 
-var imagem = document.createElement('img')
-var imgUrl = localStorage.getItem("avatar")
-imagem.src = imgUrl
-content.appendChild(imagem)
+userName.textContent = localStorage.getItem("userName")
 
 logoutButton.addEventListener('click', function () {
     location.href = "index.html"
 })
+
+avatar.src = localStorage.getItem("avatar")
+
+
+

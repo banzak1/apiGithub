@@ -12,6 +12,7 @@ function run(event) {
     .get('https://api.github.com/users/' + userName)
     .then(function (response) {
         if (response.data.message != "Not Found") {
+            localStorage.setItem("userName", response.data.login)
             localStorage.setItem("avatar", response.data.avatar_url)
             location.href = "user.html"
         }
