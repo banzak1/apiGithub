@@ -29,7 +29,7 @@ body {
     transition: all 1s;
   }
 
-#header {
+.header {
     display: flex;
     flex-direction: row;
     padding: 0.8rem;
@@ -39,19 +39,33 @@ body {
     color: #000;
 }
 
-#exit {
+.header #exit {
     display: flex;
     align-items: center;
     column-gap: 0.4rem;
     cursor: pointer;
 }
 
+.app-background {
+    background: #f9f9f9;
+    margin-top: 40px;
+}
+
+.app-background .hline {
+    border-top: 1px solid #9f9f9f;
+}
+
+.app-information {
+    margin-top: -70px;
+}
+
 #avatarSection {
-    margin:0.2rem 0 1rem 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 main img {
-    width: 120px;
-    height: 120px;
+    width: 7rem;
+    height: 7rem;
     border-radius: 50%;
     border: 0.2rem solid #1df009;
 }
