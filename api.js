@@ -13,10 +13,18 @@ function run(event) {
     .then(function (response) {
         if (response.data.message != "Not Found") {
             localStorage.setItem("userName", response.data.login)
+
             localStorage.setItem("avatar", response.data.avatar_url)
+
             localStorage.setItem("name", response.data.name)
             localStorage.setItem("email", response.data.email)
             localStorage.setItem("location", response.data.location)
+
+            localStorage.setItem("followersNumber", response.data.followers)
+            localStorage.setItem("followingNumber", response.data.following)
+            localStorage.setItem("reposNumber", response.data.public_repos)
+
+
             location.href = "user.html"
         }
         
