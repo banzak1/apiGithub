@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&display=swap');
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -37,6 +37,10 @@ body {
     align-items: center;
     justify-content: space-between;
     color: #000;
+}
+
+.header #logout {
+    text-shadow: 1px 1px 2px #6d6d6d;
 }
 
 .header #exit {
@@ -97,6 +101,34 @@ main img {
 #userInformation #location {
     font-weight: 500;
     padding: 0 0.5rem;
+    opacity: 0.7;
+}
+
+.statistics {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: #e9e9e9;
+    color: #000000;
+    width: auto;
+    height: 40%;
+    padding: 0.5rem;
+}
+
+.followers, 
+.following,
+.repos {
+    display: flex;
+    flex-direction: column;
+}
+
+.statistics .numbers {
+    font-family: 'Montserrat';
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 3px #8f8f8f;
+}
+
+.statistics .title {
     opacity: 0.7;
 }
 
