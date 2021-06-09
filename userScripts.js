@@ -12,8 +12,14 @@ var reposNumber = document.getElementById('reposNumber')
 userName.textContent = localStorage.getItem("userName")
 
 githubName.textContent = localStorage.getItem("name")
-githubEmail.textContent = localStorage.getItem("email")
+
+if (localStorage.getItem("email") != "null") {
+    githubEmail.textContent = localStorage.getItem("email")
+}
+
+if (localStorage.getItem("location") != "null") {
 githubLocation.textContent = localStorage.getItem("location")
+}
 
 followersNumber.textContent = localStorage.getItem("followersNumber")
 followingNumber.textContent = localStorage.getItem("followingNumber")
@@ -21,6 +27,7 @@ reposNumber.textContent = localStorage.getItem("reposNumber")
 
 
 logoutButton.addEventListener('click', function () {
+    localStorage.clear();
     location.href = "index.html"
 
 })
